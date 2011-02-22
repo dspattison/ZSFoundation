@@ -20,7 +20,9 @@
 
 
 /**
- * ZSFoundation NSObject wrapper for an NSInteger value
+ * ZSFoundation NSObject wrapper for an NSInteger value.
+ *
+ * @see README for more detailed information
  */
 @interface ZSInteger : NSObject <NSCopying, NSCoding> {
 	NSInteger	value;

@@ -20,7 +20,9 @@
 
 
 /**
- * ZSFoundation NSObject wrapper for a BOOL value
+ * ZSFoundation NSObject wrapper for a BOOL value.
+ *
+ * @see README for more detailed information
  */
 @interface ZSBool : NSObject <NSCopying, NSCoding> {
 	BOOL	value;

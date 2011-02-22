@@ -26,6 +26,8 @@
  * problems with doing comparisons, hashes, etc with floating point values.
  * This is alright to use for non-critical comparisons, but should not be relied
  * upon if accuracy is important.
+ *
+ * @see README for more detailed information
  */
 @interface ZSFloat : NSObject <NSCopying, NSCoding> {
 	CGFloat		value;

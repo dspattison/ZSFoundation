@@ -1,8 +1,24 @@
+----
+LICENSE
 SEE LICENSE.txt for licensing information
 
 ----
 INTRODUCTION
 This library is intended to be a supplement to Apple's Cocoa frameworks.  It is organized to be as disjoint as possible, so that components can be reused individually used in projects.  It also has targets to compile universal frameworks, for drop-in use (details in TARGETS section).
+
+----
+WHY ZSBool, ZSFloat, ZSInteger, ZSUInteger!!??
+These classes are probably the most debatable of any in this library.  For one, Cocoa already has BOOL, CGFloat, NSInteger and NSUInteger.  Why not just use those?  There are a few problems.
+
+1) Native data types are not first-class citizens in Objective C.  They can't be stored in Object-oriented data structures (NSArray, NSSet, etc).
+
+2) nil cannot be represented.  The convention in Cocoa for representing "no value" for native data types is to use the defined value NSNotFound.  This is defined to be the same as NSIntegerMax.  This is technically incorrect, since NSIntegerMax is a valid value for most situations where it is used to represent a "nil" or "null" value.  It can also lead to problems if other programmers are not aware of the convention, and echo values out to the UI.
+
+3) NSNumber is not statically typed.  The Cocoa frameworks offer a stop-gap solution by providing NSNumber.  The problem is that NSNumber is not statically typed, so there is no clear indication to the compiler, or to users of your code what the intended type is.  There are a wide variety of issues with this.  For example, comparing an NSNumber that wraps an integer with an NSNumber that wraps a float may have unexpected behavior.  Other developers will have to rely on your documentation to avoid this pitfall.
+
+So, the solution we've arrived at in ZSFoundation is to use statically typed wrappers for the more common native data types, in places where it makes sense.  This creates a slight memory overhead, which should be taken into account in high-performance scenarios, or when system constraints are of concern.
+
+NOTE - ZSFloat has some unique issues.  It is provided in order to offer some representative for floating point numbers.  Please read the source code's associated commentary and warnings about the pitfalls of comparing floating point numbers with methods like compare: and isEqual:.
 
 ----
 TARGETS
