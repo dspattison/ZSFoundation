@@ -25,6 +25,7 @@
  * @see README for more detailed information
  */
 @interface ZSBool : NSObject <NSCopying, NSCoding> {
+@private
 	BOOL	value;
 }
 

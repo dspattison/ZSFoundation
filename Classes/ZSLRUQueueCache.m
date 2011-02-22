@@ -24,6 +24,9 @@
 
 @interface ZSLRUQueueCache ()
 
+@property (nonatomic, retain)	NSMutableDictionary		*memoryCache;
+@property (nonatomic, retain)	NSMutableArray			*keyQueue;
+
 /**
  * If this object is listening for low memory warnings, this method will be called.
  */

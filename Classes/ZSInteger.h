@@ -25,6 +25,7 @@
  * @see README for more detailed information
  */
 @interface ZSInteger : NSObject <NSCopying, NSCoding> {
+@private
 	NSInteger	value;
 }
 

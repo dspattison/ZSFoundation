@@ -36,6 +36,7 @@
  * Cached objects must implement the NSCoding protocol in order to be written to disk.
  */
 @interface ZSLRUQueueCache : NSObject {
+@private
 	/**
 	 * The directory where cache files will be stored.
 	 *
@@ -89,7 +90,7 @@
 	 */
 	BOOL					shouldReduceCacheOnLowMemory;
 
-@private
+	// The following variables are for internal use
 	NSMutableDictionary		*memoryCache;
 	NSMutableArray			*keyQueue;
 }
@@ -103,9 +104,6 @@
 @property (nonatomic)			BOOL					exclusiveDiskCacheUser;
 @property (nonatomic)			BOOL					shouldClearOnLowMemory;
 @property (nonatomic)			BOOL					shouldReduceCacheOnLowMemory;
-
-@property (nonatomic, retain)	NSMutableDictionary		*memoryCache;
-@property (nonatomic, retain)	NSMutableArray			*keyQueue;
 
 + (NSString *)diskFilenameForCacheKey:(id)aKey;
 

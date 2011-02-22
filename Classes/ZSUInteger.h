@@ -25,6 +25,7 @@
  * @see README for more detailed information
  */
 @interface ZSUInteger : NSObject <NSCopying, NSCoding> {
+@private
 	NSUInteger	value;
 }
 

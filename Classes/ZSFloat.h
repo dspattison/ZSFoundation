@@ -30,6 +30,7 @@
  * @see README for more detailed information
  */
 @interface ZSFloat : NSObject <NSCopying, NSCoding> {
+@private
 	CGFloat		value;
 }
 

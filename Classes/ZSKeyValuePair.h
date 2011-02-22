@@ -19,7 +19,14 @@
 #import <Foundation/Foundation.h>
 
 
+/**
+ * This class is usefull for maintaining a 2-tuple of objects.
+ * In many cases, we would be forced to create nested dictionarys or arrays to
+ * collect pairs of objects.  This class formalizes that pattern into a clearer
+ * typing system.
+ */
 @interface ZSKeyValuePair : NSObject {
+@private
 	id	key;
 	id	value;
 }
@@ -27,6 +34,14 @@
 @property (nonatomic, retain)	id	key;
 @property (nonatomic, retain)	id	value;
 
+/**
+ * INITIALIZER (DESIGNATED)
+ * This initializer will create a ZSKeyValuePair with a given key and value.
+ *
+ * @param	aKey		The key
+ * @param	aValue		The value
+ * @return				A ZSKeyValuePair object
+ */
 - (id)initWithKey:(id)aKey andValue:(id)aValue;
 
 @end
