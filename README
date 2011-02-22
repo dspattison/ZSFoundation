@@ -1,0 +1,24 @@
+SEE LICENSE.txt for licensing information
+
+----
+INTRODUCTION
+This library is intended to be a supplement to Apple's Cocoa frameworks.  It is organized to be as disjoint as possible, so that components can be reused individually used in projects.  It also has targets to compile universal frameworks, for drop-in use (details in TARGETS section).
+
+----
+TARGETS
+ZSFoundation has a few different build targets.  Xcode does not allow for the creation of universal libraries or frameworks for iphone.  We use the following targets to overcome this limitation.
+
+ZSFoundation-universal_library
+	This target uses a script to detect whether xcode is indicating simulator or device compilation, and compile for the other target as well.  It then combines the two artifacts using the 'lipo' utility, into a single universal library that will work on either platform.
+
+ZSFoundation-framework
+	This target first runs ZSFoundation-universal_library, and then packages that artifact into a framework folder structure.
+
+UnitTests
+	Runs the unit test suite for the library.
+
+----
+USAGE
+If you want to use this library in your own project, the easiest way is to include the compiled framework.  To do that, build the ZSFoundation-framework target.  Find the ZSFoundation.framework folder inside your build folder and copy/paste it into your project.  In your project, right-click on your project in the Overview window and click "Add -> Existing Framworks".  Click "Add Other" in the next window, and select the ZSFoundation.framwork folder.
+If you want to use this library piecewise, you can find the correct libZSFoundation.a file for your platform, and add that to your project.
+Alternatively, you could add only the source code files you want directly to your own project pre-compilation.
