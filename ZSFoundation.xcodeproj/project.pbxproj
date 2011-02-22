@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA747D9F0F9514B9006C5449 /* ZSFoundation_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ZSFoundation_Prefix.pch */; settings = {ATTRIBUTES = (Private, ); }; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		F00053B6130C88D90093E979 /* ZSBool.h in Headers */ = {isa = PBXBuildFile; fileRef = F00053AC130C88D90093E979 /* ZSBool.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F00053B7130C88D90093E979 /* ZSBool.m in Sources */ = {isa = PBXBuildFile; fileRef = F00053AD130C88D90093E979 /* ZSBool.m */; };
+		F00053B8130C88D90093E979 /* ZSFloat.h in Headers */ = {isa = PBXBuildFile; fileRef = F00053AE130C88D90093E979 /* ZSFloat.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F00053B9130C88D90093E979 /* ZSFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = F00053AF130C88D90093E979 /* ZSFloat.m */; };
+		F00053BA130C88D90093E979 /* ZSInteger.h in Headers */ = {isa = PBXBuildFile; fileRef = F00053B0130C88D90093E979 /* ZSInteger.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F00053BB130C88D90093E979 /* ZSInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = F00053B1130C88D90093E979 /* ZSInteger.m */; };
+		F00053BC130C88D90093E979 /* ZSLRUQueueCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F00053B2130C88D90093E979 /* ZSLRUQueueCache.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F00053BD130C88D90093E979 /* ZSLRUQueueCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F00053B3130C88D90093E979 /* ZSLRUQueueCache.m */; };
+		F00053BE130C88D90093E979 /* ZSUInteger.h in Headers */ = {isa = PBXBuildFile; fileRef = F00053B4130C88D90093E979 /* ZSUInteger.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F00053BF130C88D90093E979 /* ZSUInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = F00053B5130C88D90093E979 /* ZSUInteger.m */; };
+		F00053C2130C88F70093E979 /* ZSKeyValuePair.h in Headers */ = {isa = PBXBuildFile; fileRef = F00053C0130C88F70093E979 /* ZSKeyValuePair.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F00053C3130C88F70093E979 /* ZSKeyValuePair.m in Sources */ = {isa = PBXBuildFile; fileRef = F00053C1130C88F70093E979 /* ZSKeyValuePair.m */; };
+		F00053D6130C8BBB0093E979 /* TestUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F00053D5130C8BBB0093E979 /* TestUtility.m */; };
+		F0AA573613123D2B00B1809A /* TestZSBool.h in Headers */ = {isa = PBXBuildFile; fileRef = F0AA573313123D2B00B1809A /* TestZSBool.h */; };
+		F0AA580C13136A9300B1809A /* TestZSBool.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AA573413123D2B00B1809A /* TestZSBool.m */; };
+		F0AA583F13136BF900B1809A /* TestZSFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AA583A13136BF900B1809A /* TestZSFloat.m */; };
+		F0AA584013136BF900B1809A /* TestZSInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AA583C13136BF900B1809A /* TestZSInteger.m */; };
+		F0AA584113136BF900B1809A /* TestZSUInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AA583E13136BF900B1809A /* TestZSUInteger.m */; };
+		F0E14236130CAB1B00C23ACB /* TestZSLRUQueueCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F00053D1130C8B4F0093E979 /* TestZSLRUQueueCache.m */; };
+		F0E1424F130CAC2300C23ACB /* ZSBool.m in Sources */ = {isa = PBXBuildFile; fileRef = F00053AD130C88D90093E979 /* ZSBool.m */; };
+		F0E14250130CAC2300C23ACB /* ZSFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = F00053AF130C88D90093E979 /* ZSFloat.m */; };
+		F0E14251130CAC2300C23ACB /* ZSInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = F00053B1130C88D90093E979 /* ZSInteger.m */; };
+		F0E14252130CAC2300C23ACB /* ZSKeyValuePair.m in Sources */ = {isa = PBXBuildFile; fileRef = F00053C1130C88F70093E979 /* ZSKeyValuePair.m */; };
+		F0E14253130CAC2300C23ACB /* ZSLRUQueueCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F00053B3130C88D90093E979 /* ZSLRUQueueCache.m */; };
+		F0E14254130CAC2300C23ACB /* ZSUInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = F00053B5130C88D90093E979 /* ZSUInteger.m */; };
+		F0E142B9130CAD6300C23ACB /* gtm copy 1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0E142B5130CAD6300C23ACB /* gtm copy 1.png */; };
+		F0E142BA130CAD6300C23ACB /* gtm copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = F0E142B6130CAD6300C23ACB /* gtm copy 2.png */; };
+		F0E142BB130CAD6300C23ACB /* gtm copy 3.png in Resources */ = {isa = PBXBuildFile; fileRef = F0E142B7130CAD6300C23ACB /* gtm copy 3.png */; };
+		F0E142BC130CAD6300C23ACB /* gtm.png in Resources */ = {isa = PBXBuildFile; fileRef = F0E142B8130CAD6300C23ACB /* gtm.png */; };
+		F0E144DD130CECC000C23ACB /* ZSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = F0E144DA130CECC000C23ACB /* ZSFoundation.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F0E14541130CF4A000C23ACB /* ZSBool.h in Headers */ = {isa = PBXBuildFile; fileRef = F00053AC130C88D90093E979 /* ZSBool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0E14542130CF4A000C23ACB /* ZSFloat.h in Headers */ = {isa = PBXBuildFile; fileRef = F00053AE130C88D90093E979 /* ZSFloat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0E14543130CF4A000C23ACB /* ZSInteger.h in Headers */ = {isa = PBXBuildFile; fileRef = F00053B0130C88D90093E979 /* ZSInteger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0E14544130CF4A000C23ACB /* ZSKeyValuePair.h in Headers */ = {isa = PBXBuildFile; fileRef = F00053C0130C88F70093E979 /* ZSKeyValuePair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0E14545130CF4A000C23ACB /* ZSLRUQueueCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F00053B2130C88D90093E979 /* ZSLRUQueueCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0E14546130CF4A000C23ACB /* ZSUInteger.h in Headers */ = {isa = PBXBuildFile; fileRef = F00053B4130C88D90093E979 /* ZSUInteger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0E14547130CF4A000C23ACB /* ZSFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = F0E144DA130CECC000C23ACB /* ZSFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0005409130C8E4A0093E979 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ZSFoundation;
+		};
+		F0E14576130CF5F300C23ACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "ZSFoundation-Universal";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA747D9E0F9514B9006C5449 /* ZSFoundation_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSFoundation_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libZSFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZSFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00053AC130C88D90093E979 /* ZSBool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSBool.h; sourceTree = "<group>"; };
+		F00053AD130C88D90093E979 /* ZSBool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSBool.m; sourceTree = "<group>"; };
+		F00053AE130C88D90093E979 /* ZSFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSFloat.h; sourceTree = "<group>"; };
+		F00053AF130C88D90093E979 /* ZSFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSFloat.m; sourceTree = "<group>"; };
+		F00053B0130C88D90093E979 /* ZSInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSInteger.h; sourceTree = "<group>"; };
+		F00053B1130C88D90093E979 /* ZSInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSInteger.m; sourceTree = "<group>"; };
+		F00053B2130C88D90093E979 /* ZSLRUQueueCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSLRUQueueCache.h; sourceTree = "<group>"; };
+		F00053B3130C88D90093E979 /* ZSLRUQueueCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSLRUQueueCache.m; sourceTree = "<group>"; };
+		F00053B4130C88D90093E979 /* ZSUInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSUInteger.h; sourceTree = "<group>"; };
+		F00053B5130C88D90093E979 /* ZSUInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSUInteger.m; sourceTree = "<group>"; };
+		F00053C0130C88F70093E979 /* ZSKeyValuePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSKeyValuePair.h; sourceTree = "<group>"; };
+		F00053C1130C88F70093E979 /* ZSKeyValuePair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSKeyValuePair.m; sourceTree = "<group>"; };
+		F00053CA130C8AFF0093E979 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F00053CB130C8AFF0093E979 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		F00053D0130C8B4F0093E979 /* TestZSLRUQueueCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestZSLRUQueueCache.h; sourceTree = "<group>"; };
+		F00053D1130C8B4F0093E979 /* TestZSLRUQueueCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestZSLRUQueueCache.m; sourceTree = "<group>"; };
+		F00053D4130C8BBB0093E979 /* TestUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUtility.h; sourceTree = "<group>"; };
+		F00053D5130C8BBB0093E979 /* TestUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUtility.m; sourceTree = "<group>"; };
+		F0AA573313123D2B00B1809A /* TestZSBool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestZSBool.h; sourceTree = "<group>"; };
+		F0AA573413123D2B00B1809A /* TestZSBool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestZSBool.m; sourceTree = "<group>"; };
+		F0AA583913136BF900B1809A /* TestZSFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestZSFloat.h; sourceTree = "<group>"; };
+		F0AA583A13136BF900B1809A /* TestZSFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestZSFloat.m; sourceTree = "<group>"; };
+		F0AA583B13136BF900B1809A /* TestZSInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestZSInteger.h; sourceTree = "<group>"; };
+		F0AA583C13136BF900B1809A /* TestZSInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestZSInteger.m; sourceTree = "<group>"; };
+		F0AA583D13136BF900B1809A /* TestZSUInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestZSUInteger.h; sourceTree = "<group>"; };
+		F0AA583E13136BF900B1809A /* TestZSUInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestZSUInteger.m; sourceTree = "<group>"; };
+		F0E142B5130CAD6300C23ACB /* gtm copy 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gtm copy 1.png"; sourceTree = "<group>"; };
+		F0E142B6130CAD6300C23ACB /* gtm copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gtm copy 2.png"; sourceTree = "<group>"; };
+		F0E142B7130CAD6300C23ACB /* gtm copy 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gtm copy 3.png"; sourceTree = "<group>"; };
+		F0E142B8130CAD6300C23ACB /* gtm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gtm.png; sourceTree = "<group>"; };
+		F0E144DA130CECC000C23ACB /* ZSFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSFoundation.h; sourceTree = "<group>"; };
+		F0E14531130CF34F00C23ACB /* ZSFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZSFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E14532130CF34F00C23ACB /* ZSFoundation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZSFoundation-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F00053C7130C8AFF0093E979 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0E1452F130CF34F00C23ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libZSFoundation.a */,
+				F00053CA130C8AFF0093E979 /* UnitTests.octest */,
+				F0E14531130CF34F00C23ACB /* ZSFoundation.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* ZSFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				F00053AB130C88D90093E979 /* Classes */,
+				F00053CF130C8B260093E979 /* UnitTests */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				F00053CB130C8AFF0093E979 /* UnitTests-Info.plist */,
+				F0E14532130CF34F00C23ACB /* ZSFoundation-Info.plist */,
+			);
+			name = ZSFoundation;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* ZSFoundation_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		F00053AB130C88D90093E979 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F00053AC130C88D90093E979 /* ZSBool.h */,
+				F00053AD130C88D90093E979 /* ZSBool.m */,
+				F00053AE130C88D90093E979 /* ZSFloat.h */,
+				F00053AF130C88D90093E979 /* ZSFloat.m */,
+				F00053B0130C88D90093E979 /* ZSInteger.h */,
+				F00053B1130C88D90093E979 /* ZSInteger.m */,
+				F00053C0130C88F70093E979 /* ZSKeyValuePair.h */,
+				F00053C1130C88F70093E979 /* ZSKeyValuePair.m */,
+				F00053B2130C88D90093E979 /* ZSLRUQueueCache.h */,
+				F00053B3130C88D90093E979 /* ZSLRUQueueCache.m */,
+				F00053B4130C88D90093E979 /* ZSUInteger.h */,
+				F00053B5130C88D90093E979 /* ZSUInteger.m */,
+				F0E144DA130CECC000C23ACB /* ZSFoundation.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F00053CF130C8B260093E979 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0E142B3130CAD3300C23ACB /* Resources */,
+				F00053D3130C8BAA0093E979 /* Utilities */,
+				F0AA573313123D2B00B1809A /* TestZSBool.h */,
+				F0AA573413123D2B00B1809A /* TestZSBool.m */,
+				F0AA583913136BF900B1809A /* TestZSFloat.h */,
+				F0AA583A13136BF900B1809A /* TestZSFloat.m */,
+				F0AA583B13136BF900B1809A /* TestZSInteger.h */,
+				F0AA583C13136BF900B1809A /* TestZSInteger.m */,
+				F00053D0130C8B4F0093E979 /* TestZSLRUQueueCache.h */,
+				F00053D1130C8B4F0093E979 /* TestZSLRUQueueCache.m */,
+				F0AA583D13136BF900B1809A /* TestZSUInteger.h */,
+				F0AA583E13136BF900B1809A /* TestZSUInteger.m */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		F00053D3130C8BAA0093E979 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F00053D4130C8BBB0093E979 /* TestUtility.h */,
+				F00053D5130C8BBB0093E979 /* TestUtility.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F0E142B3130CAD3300C23ACB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0E142B5130CAD6300C23ACB /* gtm copy 1.png */,
+				F0E142B6130CAD6300C23ACB /* gtm copy 2.png */,
+				F0E142B7130CAD6300C23ACB /* gtm copy 3.png */,
+				F0E142B8130CAD6300C23ACB /* gtm.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* ZSFoundation_Prefix.pch in Headers */,
+				F00053B6130C88D90093E979 /* ZSBool.h in Headers */,
+				F00053B8130C88D90093E979 /* ZSFloat.h in Headers */,
+				F00053BA130C88D90093E979 /* ZSInteger.h in Headers */,
+				F00053BC130C88D90093E979 /* ZSLRUQueueCache.h in Headers */,
+				F00053BE130C88D90093E979 /* ZSUInteger.h in Headers */,
+				F00053C2130C88F70093E979 /* ZSKeyValuePair.h in Headers */,
+				F0E144DD130CECC000C23ACB /* ZSFoundation.h in Headers */,
+				F0AA573613123D2B00B1809A /* TestZSBool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0E1453E130CF47D00C23ACB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E14541130CF4A000C23ACB /* ZSBool.h in Headers */,
+				F0E14542130CF4A000C23ACB /* ZSFloat.h in Headers */,
+				F0E14543130CF4A000C23ACB /* ZSInteger.h in Headers */,
+				F0E14544130CF4A000C23ACB /* ZSKeyValuePair.h in Headers */,
+				F0E14545130CF4A000C23ACB /* ZSLRUQueueCache.h in Headers */,
+				F0E14546130CF4A000C23ACB /* ZSUInteger.h in Headers */,
+				F0E14547130CF4A000C23ACB /* ZSFoundation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* ZSFoundation-universal_library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ZSFoundation-universal_library" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+				F0E14334130CCCCE00C23ACB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZSFoundation-universal_library";
+			productName = ZSFoundation;
+			productReference = D2AAC07E0554694100DB518D /* libZSFoundation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F00053C9130C8AFF0093E979 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F00053CE130C8B000093E979 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				F00053C5130C8AFF0093E979 /* Resources */,
+				F00053C6130C8AFF0093E979 /* Sources */,
+				F00053C7130C8AFF0093E979 /* Frameworks */,
+				F00053C8130C8AFF0093E979 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F000540A130C8E4A0093E979 /* PBXTargetDependency */,
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = F00053CA130C8AFF0093E979 /* UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F0E14530130CF34F00C23ACB /* ZSFoundation-framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0E14535130CF34F00C23ACB /* Build configuration list for PBXNativeTarget "ZSFoundation-framework" */;
+			buildPhases = (
+				F0E1452D130CF34F00C23ACB /* Resources */,
+				F0E1452E130CF34F00C23ACB /* Sources */,
+				F0E1452F130CF34F00C23ACB /* Frameworks */,
+				F0E1453E130CF47D00C23ACB /* Headers */,
+				F0E1457F130CF73A00C23ACB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0E14577130CF5F300C23ACB /* PBXTargetDependency */,
+			);
+			name = "ZSFoundation-framework";
+			productName = ZSFoundation.framework;
+			productReference = F0E14531130CF34F00C23ACB /* ZSFoundation.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ZSFoundation" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* ZSFoundation */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* ZSFoundation-universal_library */,
+				F00053C9130C8AFF0093E979 /* UnitTests */,
+				F0E14530130CF34F00C23ACB /* ZSFoundation-framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F00053C5130C8AFF0093E979 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E142B9130CAD6300C23ACB /* gtm copy 1.png in Resources */,
+				F0E142BA130CAD6300C23ACB /* gtm copy 2.png in Resources */,
+				F0E142BB130CAD6300C23ACB /* gtm copy 3.png in Resources */,
+				F0E142BC130CAD6300C23ACB /* gtm.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0E1452D130CF34F00C23ACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F00053C8130C8AFF0093E979 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		F0E14334130CCCCE00C23ACB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Purpose:\n#   Create a static library for iPhone from within XCode\n#   Because Apple staff DELIBERATELY broke Xcode to make this impossible from the GUI (Xcode 3.2.3 specifically states this in the Release notes!)\n#   ...no, I don't understand why they did such a stupid thing either!\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n# More info: see this Stack Overflow question: http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" = ${ALREADYINVOKED} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUULD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\"\nxcodebuild -configuration \"${CONFIGURATION}\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\nfi\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\nCURRENTCONFIG_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CURRENTCONFIG_UNIVERSAL_DIR}\"\nmkdir \"${CURRENTCONFIG_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nlipo -create -output \"${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}/usr/local/include\" ]\nthen\n  mkdir -p \"${CURRENTCONFIG_UNIVERSAL_DIR}/usr/local/include\"\n  cp \"${CURRENTCONFIG_DEVICE_DIR}\"/usr/local/include/* \"${CURRENTCONFIG_UNIVERSAL_DIR}/usr/local/include\"\nfi";
+		};
+		F0E1457F130CF73A00C23ACB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Copying ${SYMROOT}/${CONFIGURATION}-universal/${EXECUTABLE_NAME} to ${CONFIGURATION_BUILD_DIR}/${FULL_PRODUCT_NAME}/${PRODUCT_NAME}\"\ncp \"${SYMROOT}/${CONFIGURATION}-universal/libZSFoundation.a\" \"${CONFIGURATION_BUILD_DIR}/${FULL_PRODUCT_NAME}/${PRODUCT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00053B7130C88D90093E979 /* ZSBool.m in Sources */,
+				F00053B9130C88D90093E979 /* ZSFloat.m in Sources */,
+				F00053BB130C88D90093E979 /* ZSInteger.m in Sources */,
+				F00053BD130C88D90093E979 /* ZSLRUQueueCache.m in Sources */,
+				F00053BF130C88D90093E979 /* ZSUInteger.m in Sources */,
+				F00053C3130C88F70093E979 /* ZSKeyValuePair.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F00053C6130C8AFF0093E979 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00053D6130C8BBB0093E979 /* TestUtility.m in Sources */,
+				F0E14236130CAB1B00C23ACB /* TestZSLRUQueueCache.m in Sources */,
+				F0E1424F130CAC2300C23ACB /* ZSBool.m in Sources */,
+				F0E14250130CAC2300C23ACB /* ZSFloat.m in Sources */,
+				F0E14251130CAC2300C23ACB /* ZSInteger.m in Sources */,
+				F0E14252130CAC2300C23ACB /* ZSKeyValuePair.m in Sources */,
+				F0E14253130CAC2300C23ACB /* ZSLRUQueueCache.m in Sources */,
+				F0E14254130CAC2300C23ACB /* ZSUInteger.m in Sources */,
+				F0AA580C13136A9300B1809A /* TestZSBool.m in Sources */,
+				F0AA583F13136BF900B1809A /* TestZSFloat.m in Sources */,
+				F0AA584013136BF900B1809A /* TestZSInteger.m in Sources */,
+				F0AA584113136BF900B1809A /* TestZSUInteger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0E1452E130CF34F00C23ACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F000540A130C8E4A0093E979 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* ZSFoundation-universal_library */;
+			targetProxy = F0005409130C8E4A0093E979 /* PBXContainerItemProxy */;
+		};
+		F0E14577130CF5F300C23ACB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* ZSFoundation-universal_library */;
+			targetProxy = F0E14576130CF5F300C23ACB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/ZSFoundation.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZSFoundation_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = ZSFoundation;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/ZSFoundation.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ZSFoundation_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = ZSFoundation;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator4.1;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+		F00053CC130C8B000093E979 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F00053CD130C8B000093E979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		F0E14533130CF34F00C23ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "ZSFoundation-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ZSFoundation;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		F0E14534130CF34F00C23ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "ZSFoundation-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = ZSFoundation;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ZSFoundation-universal_library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ZSFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F00053CE130C8B000093E979 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F00053CC130C8B000093E979 /* Debug */,
+				F00053CD130C8B000093E979 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0E14535130CF34F00C23ACB /* Build configuration list for PBXNativeTarget "ZSFoundation-framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0E14533130CF34F00C23ACB /* Debug */,
+				F0E14534130CF34F00C23ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

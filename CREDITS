@@ -1,0 +1,11 @@
+Credit for build script to create "universal" library binary
+
+Answer by "Adam" (http://stackoverflow.com/users/153422/adam)
+Posted 09/05/2010
+Retrieved 02/14/2011
+http://stackoverflow.com/questions/3520977
+Based on answer by "Eonil" (http://stackoverflow.com/users/246776/eonil)
+
+
+Thanks to Michael Safyan for tips on creating an iPhone framework bundle in xcode
+http://sites.google.com/site/michaelsafyan/coding/resources/how-to-guides/cross-compile-for-the-iphone/how-to-construct-iphone-framework-bundles-for-cross-compiled-iphone-libraries
