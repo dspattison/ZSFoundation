@@ -23,7 +23,7 @@
 
 @synthesize value;
 
-- (id)initWithValue:(BOOL)aValue {
+- (id)initWithBool:(BOOL)aValue {
 	if (self = [super init]) {
 		value = aValue;
 	}

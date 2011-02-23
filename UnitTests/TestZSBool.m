@@ -26,17 +26,17 @@
 	ZSBool *testBool1 = [[[ZSBool alloc] init] autorelease];
 	STAssertTrue(NO == testBool1.value, @"1) Default initializer did not work properly!");
 	
-	ZSBool *testBool2 = [[[ZSBool alloc] initWithValue:NO] autorelease];
+	ZSBool *testBool2 = [[[ZSBool alloc] initWithBool:NO] autorelease];
 	STAssertTrue(NO == testBool2.value, @"2) Initializing with initial value did not work properly!");
 	
-	ZSBool *testBool3 = [[[ZSBool alloc] initWithValue:YES] autorelease];
+	ZSBool *testBool3 = [[[ZSBool alloc] initWithBool:YES] autorelease];
 	STAssertTrue(YES == testBool3.value, @"3) Initializing with initial value did not work properly!");
 }
 
 - (void)testHashAndEquals {
-	ZSBool *testBool1	= [[[ZSBool alloc] initWithValue:NO] autorelease];
-	ZSBool *testBool2	= [[[ZSBool alloc] initWithValue:YES] autorelease];
-	ZSBool *testBool3	= [[[ZSBool alloc] initWithValue:YES] autorelease];
+	ZSBool *testBool1	= [[[ZSBool alloc] initWithBool:NO] autorelease];
+	ZSBool *testBool2	= [[[ZSBool alloc] initWithBool:YES] autorelease];
+	ZSBool *testBool3	= [[[ZSBool alloc] initWithBool:YES] autorelease];
 	
 	STAssertTrue(![testBool1 isEqual:testBool2], @"1) isEquals true when should be false!");
 	STAssertTrue([testBool2 isEqual:testBool3], @"2) isEquals false when should be true!");
@@ -44,17 +44,17 @@
 }
 
 - (void)testCopy {
-	ZSBool *testBool1	= [[[ZSBool alloc] initWithValue:YES] autorelease];
+	ZSBool *testBool1	= [[[ZSBool alloc] initWithBool:YES] autorelease];
 	ZSBool *testBool2	= [testBool1 copy];
 	
 	STAssertTrue([testBool1 isEqual:testBool2], @"1) Copied object not equal to original!");
 }
 
 - (void)testCompare {
-	ZSBool *testBool1	= [[[ZSBool alloc] initWithValue:NO] autorelease];
-	ZSBool *testBool2	= [[[ZSBool alloc] initWithValue:NO] autorelease];
-	ZSBool *testBool3	= [[[ZSBool alloc] initWithValue:YES] autorelease];
-	ZSBool *testBool4	= [[[ZSBool alloc] initWithValue:YES] autorelease];
+	ZSBool *testBool1	= [[[ZSBool alloc] initWithBool:NO] autorelease];
+	ZSBool *testBool2	= [[[ZSBool alloc] initWithBool:NO] autorelease];
+	ZSBool *testBool3	= [[[ZSBool alloc] initWithBool:YES] autorelease];
+	ZSBool *testBool4	= [[[ZSBool alloc] initWithBool:YES] autorelease];
 	
 	STAssertTrue(NSOrderedSame == [testBool1 compare:testBool2], @"1) Equal objects not NSOrderedSame!");
 	STAssertTrue(NSOrderedSame != [testBool1 compare:testBool3], @"2) Non-equal objects NSOrderedSame!");
@@ -63,7 +63,7 @@
 }
 
 - (void)testNSCoding {
-	ZSBool *testBool1	= [[[ZSBool alloc] initWithValue:YES] autorelease];
+	ZSBool *testBool1	= [[[ZSBool alloc] initWithBool:YES] autorelease];
 	
 	NSMutableData *data			= [NSMutableData data];
 	NSKeyedArchiver *archiver	= [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];

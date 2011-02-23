@@ -23,7 +23,7 @@
 
 @synthesize value;
 
-- (id)initWithValue:(NSInteger)aValue {
+- (id)initWithInteger:(NSInteger)aValue {
 	if (self = [super init]) {
 		value = aValue;
 	}

@@ -23,7 +23,7 @@
 
 @synthesize value;
 
-- (id)initWithValue:(CGFloat)aValue {
+- (id)initWithFloat:(CGFloat)aValue {
 	if (self = [super init]) {
 		value = aValue;
 	}

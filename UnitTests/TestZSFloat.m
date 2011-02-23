@@ -26,17 +26,17 @@
 	ZSFloat *testFloat1 = [[[ZSFloat alloc] init] autorelease];
 	STAssertTrue(0.0 == testFloat1.value, @"1) Default initializer did not work properly!");
 	
-	ZSFloat *testFloat2 = [[[ZSFloat alloc] initWithValue:0.5] autorelease];
+	ZSFloat *testFloat2 = [[[ZSFloat alloc] initWithFloat:0.5] autorelease];
 	STAssertTrue(0.5 == testFloat2.value, @"2) Initializing with initial value did not work properly!");
 	
-	ZSFloat *testFloat3 = [[[ZSFloat alloc] initWithValue:1.0] autorelease];
+	ZSFloat *testFloat3 = [[[ZSFloat alloc] initWithFloat:1.0] autorelease];
 	STAssertTrue(1.0 == testFloat3.value, @"3) Initializing with initial value did not work properly!");
 }
 
 - (void)testHashAndEquals {
-	ZSFloat *testFloat1	= [[[ZSFloat alloc] initWithValue:2.7] autorelease];
-	ZSFloat *testFloat2	= [[[ZSFloat alloc] initWithValue:4.3] autorelease];
-	ZSFloat *testFloat3	= [[[ZSFloat alloc] initWithValue:4.3] autorelease];
+	ZSFloat *testFloat1	= [[[ZSFloat alloc] initWithFloat:2.7] autorelease];
+	ZSFloat *testFloat2	= [[[ZSFloat alloc] initWithFloat:4.3] autorelease];
+	ZSFloat *testFloat3	= [[[ZSFloat alloc] initWithFloat:4.3] autorelease];
 	
 	STAssertTrue(![testFloat1 isEqual:testFloat2], @"1) isEquals true when should be false!");
 	STAssertTrue([testFloat2 isEqual:testFloat3], @"2) isEquals false when should be true!");
@@ -44,17 +44,17 @@
 }
 
 - (void)testCopy {
-	ZSFloat *testFloat1	= [[[ZSFloat alloc] initWithValue:-66.2] autorelease];
+	ZSFloat *testFloat1	= [[[ZSFloat alloc] initWithFloat:-66.2] autorelease];
 	ZSFloat *testFloat2	= [testFloat1 copy];
 	
 	STAssertTrue([testFloat1 isEqual:testFloat2], @"1) Copied object not equal to original!");
 }
 
 - (void)testCompare {
-	ZSFloat *testFloat1	= [[[ZSFloat alloc] initWithValue:6.6] autorelease];
-	ZSFloat *testFloat2	= [[[ZSFloat alloc] initWithValue:6.6] autorelease];
-	ZSFloat *testFloat3	= [[[ZSFloat alloc] initWithValue:332.5] autorelease];
-	ZSFloat *testFloat4	= [[[ZSFloat alloc] initWithValue:332.5] autorelease];
+	ZSFloat *testFloat1	= [[[ZSFloat alloc] initWithFloat:6.6] autorelease];
+	ZSFloat *testFloat2	= [[[ZSFloat alloc] initWithFloat:6.6] autorelease];
+	ZSFloat *testFloat3	= [[[ZSFloat alloc] initWithFloat:332.5] autorelease];
+	ZSFloat *testFloat4	= [[[ZSFloat alloc] initWithFloat:332.5] autorelease];
 	
 	STAssertTrue(NSOrderedSame == [testFloat1 compare:testFloat2], @"1) Equal objects not NSOrderedSame!");
 	STAssertTrue(NSOrderedAscending == [testFloat1 compare:testFloat3], @"2) Not NSOrderedAscending when should be!");
@@ -63,7 +63,7 @@
 }
 
 - (void)testNSCoding {
-	ZSFloat *testFloat1	= [[[ZSFloat alloc] initWithValue:345.6] autorelease];
+	ZSFloat *testFloat1	= [[[ZSFloat alloc] initWithFloat:345.6] autorelease];
 	
 	NSMutableData *data			= [NSMutableData data];
 	NSKeyedArchiver *archiver	= [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];

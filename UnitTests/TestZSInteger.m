@@ -26,17 +26,17 @@
 	ZSInteger *testInteger1 = [[[ZSInteger alloc] init] autorelease];
 	STAssertTrue(0 == testInteger1.value, @"1) Default initializer did not work properly!");
 	
-	ZSInteger *testInteger2 = [[[ZSInteger alloc] initWithValue:-56] autorelease];
+	ZSInteger *testInteger2 = [[[ZSInteger alloc] initWithInteger:-56] autorelease];
 	STAssertTrue(-56 == testInteger2.value, @"2) Initializing with initial value did not work properly!");
 	
-	ZSInteger *testInteger3 = [[[ZSInteger alloc] initWithValue:2] autorelease];
+	ZSInteger *testInteger3 = [[[ZSInteger alloc] initWithInteger:2] autorelease];
 	STAssertTrue(2 == testInteger3.value, @"3) Initializing with initial value did not work properly!");
 }
 
 - (void)testHashAndEquals {
-	ZSInteger *testInteger1	= [[[ZSInteger alloc] initWithValue:1] autorelease];
-	ZSInteger *testInteger2	= [[[ZSInteger alloc] initWithValue:5] autorelease];
-	ZSInteger *testInteger3	= [[[ZSInteger alloc] initWithValue:5] autorelease];
+	ZSInteger *testInteger1	= [[[ZSInteger alloc] initWithInteger:1] autorelease];
+	ZSInteger *testInteger2	= [[[ZSInteger alloc] initWithInteger:5] autorelease];
+	ZSInteger *testInteger3	= [[[ZSInteger alloc] initWithInteger:5] autorelease];
 	
 	STAssertTrue(![testInteger1 isEqual:testInteger2], @"1) isEquals true when should be false!");
 	STAssertTrue([testInteger2 isEqual:testInteger3], @"2) isEquals false when should be true!");
@@ -44,17 +44,17 @@
 }
 
 - (void)testCopy {
-	ZSInteger *testInteger1	= [[[ZSInteger alloc] initWithValue:-346] autorelease];
+	ZSInteger *testInteger1	= [[[ZSInteger alloc] initWithInteger:-346] autorelease];
 	ZSInteger *testInteger2	= [testInteger1 copy];
 	
 	STAssertTrue([testInteger1 isEqual:testInteger2], @"1) Copied object not equal to original!");
 }
 
 - (void)testCompare {
-	ZSInteger *testInteger1	= [[[ZSInteger alloc] initWithValue:45] autorelease];
-	ZSInteger *testInteger2	= [[[ZSInteger alloc] initWithValue:45] autorelease];
-	ZSInteger *testInteger3	= [[[ZSInteger alloc] initWithValue:7657] autorelease];
-	ZSInteger *testInteger4	= [[[ZSInteger alloc] initWithValue:7657] autorelease];
+	ZSInteger *testInteger1	= [[[ZSInteger alloc] initWithInteger:45] autorelease];
+	ZSInteger *testInteger2	= [[[ZSInteger alloc] initWithInteger:45] autorelease];
+	ZSInteger *testInteger3	= [[[ZSInteger alloc] initWithInteger:7657] autorelease];
+	ZSInteger *testInteger4	= [[[ZSInteger alloc] initWithInteger:7657] autorelease];
 	
 	STAssertTrue(NSOrderedSame == [testInteger1 compare:testInteger2], @"1) Equal objects not NSOrderedSame!");
 	STAssertTrue(NSOrderedAscending == [testInteger1 compare:testInteger3], @"2) Not NSOrderedAscending when should be!");
@@ -63,7 +63,7 @@
 }
 
 - (void)testNSCoding {
-	ZSInteger *testInteger1	= [[[ZSInteger alloc] initWithValue:-45645] autorelease];
+	ZSInteger *testInteger1	= [[[ZSInteger alloc] initWithInteger:-45645] autorelease];
 	
 	NSMutableData *data			= [NSMutableData data];
 	NSKeyedArchiver *archiver	= [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
